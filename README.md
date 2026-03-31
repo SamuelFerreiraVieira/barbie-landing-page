@@ -15,10 +15,9 @@ Owl Carousel 2: Biblioteca que usei para fazer aquele slider do elenco que desli
 
 Google Fonts: Fonte Inter para dar um ar moderno e profissional.
 
-🚀 O que eu fiz de diferencial?
-Não foi só "copiar e colar" o layout. Eu foquei em detalhes que fazem a diferença na vida real:
+🚀 O que eu fiz:
 
-1. Responsividade de Verdade
+1. Responsividade 
 O site não quebra. Ajustei os Breakpoints para que, no tablet (1024px) e no celular, os elementos se reorganizem. No tablet, centralizei o título e o poster para o visual não ficar "espalhado" demais.
 
 2. Meta tags
