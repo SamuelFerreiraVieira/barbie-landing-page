@@ -1,0 +1,370 @@
+
+:root {
+    --bg-color: #f2ead3;
+    --primary-color: #3f2305;
+    --accent-color: #a4907c;
+    --text-main: #3f2305;
+    --text-light: #a4907c;
+    --white: #FFFFFF;
+    --cast-bg: #dfd7bf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.main-header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    color: var(--bg-color);
+    margin-bottom: 40px;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 55px; 
+}
+
+.main-header ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.main-header a {
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.main-header a:hover {
+    opacity: 0.7;
+}
+
+
+.movie-details {
+    display: flex;
+    margin-bottom: 60px;
+    align-items: flex-start;
+}
+
+.poster img {
+    border-radius: 20px;
+    width: 1000px; 
+    height: auto;
+}
+
+.info h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.info h1 span {
+    font-weight: 300;
+    color: var(--text-light);
+}
+
+.genre {
+    margin-bottom: 25px;
+}
+
+.sinopse {
+    margin-bottom: 30px;
+}
+
+.sinopse h3, 
+.metadata-grid h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.metadata-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.cast {
+    background-color: var(--cast-bg);
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    
+    padding: 20px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.cast .container {
+    position: relative; 
+    overflow: hidden;   
+}
+
+.cast .container::after {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;      
+    height: 100%;       
+    pointer-events: none; 
+    z-index: 10;        
+    background: linear-gradient(to left, var(--cast-bg) 0%, rgba(223, 215, 191, 0) 100%);
+}
+   
+.section-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    
+}
+
+.section-header h2 {
+    font-size: 30px;
+    color: #4A3219;
+}
+
+.btn-more {
+    background-color: #4A3219;
+    color: #f2ead3;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-more:hover {
+    background-color: #634529;
+}
+
+
+.owl-carousel {
+    background: transparent !important;
+    width: 100%;
+    
+}
+
+.cast-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background: transparent !important;
+}
+
+.cast-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    
+}
+
+.actor-name {
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 2px;
+}
+
+.role {
+    color: #333333;
+    font-size: 0.9rem;
+}
+
+
+.owl-theme .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: var(--accent-color) ;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: var(--primary-color) ;
+}
+
+/* --- SEÇÃO DE RESENHAS --- */
+/* --- SEÇÃO DE RESENHAS --- */
+.reviews {
+    padding: 40px 0;
+}
+
+/* Header com Título e Botão lado a lado */
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.section-header h2 {
+    font-size: 1.8rem;
+    color: #3d2b1f; /* Marrom escuro */
+}
+
+/* Grid de duas colunas */
+.reviews-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.review-card {
+    background-color: #d9d2ba; /* Tom exato da Screenshot */
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 0px;
+}
+
+/* Rodapé */
+.review-footer .author {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.review-footer .author strong {
+    color: #3d2b1f;
+}
+
+/* Alinhamento da Data e Nota */
+.footer-meta {
+    display: flex;
+    justify-content: space-between; /* Joga um pra cada lado */
+    align-items: center;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.rating strong {
+    color: #000;
+    font-size: 1.1rem;
+}
+
+/* Botão "Ver mais" */
+.btn-more {
+    background-color: #3d2b1f;
+    color: #ede6d6;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* --- ESTILIZAÇÃO DO RODAPÉ FINAL --- */
+.main-footer {
+    background-color: #3f2305; /* Marrom escuro conforme Screenshot_43 */
+    padding: 60px 0;
+    margin-top: 50px;
+    color: #ede6d6;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Logo no Rodapé */
+.footer-brand img {
+    height: 60px; /* Ajuste o tamanho conforme sua logo */
+    opacity: 0.9;
+}
+
+/* Grid de Links */
+.footer-nav {
+    display: flex;
+    gap: 250px; /* Espaço entre as colunas de links */
+}
+
+.footer-column {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    color: #ede6d6;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: opacity 0.2s;
+}
+
+.footer-column a:hover {
+    opacity: 0.7;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .main-footer .container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .footer-nav {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+}
