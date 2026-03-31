@@ -1,22 +1,36 @@
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
-    loop: false,         // Como são poucos atores, pode deixar false ou true
-    margin: 20,          // Espaço entre as fotos
-    nav: false,          // Remove as setas (o layout não parece ter setas)
-    dots: true,          // Mantém os pontinhos de navegação
+    loop: false,         
+    margin: 20,          
+    nav: false,          
+    dots: true,          
     responsive:{
         0:{
-            items: 1     // 1 ator por vez no celular muito pequeno
+            items: 2    
         },
         480:{
-            items: 2     // 2 atores no celular
+            items:  2    
         },
         768:{
-            items: 4     // 4 atores no tablet
+            items: 4    
         },
         1000:{
-            items: 6     // 6 atores no desktop (como no layout)
+            items: 6     
         }
     }
   });
+
+  $('.menu-toggle').click(function() {
+        $('.nav-links').stop().slideToggle(300);
+        
+        let expanded = $(this).attr('aria-expanded') === 'true';
+        $(this).attr('aria-expanded', !expanded);
+    });
+
+    $(window).resize(function() {
+        if ($(window).width() > 1024) {
+            $('.nav-links').removeAttr('style');
+        }
+    });
+
 });
