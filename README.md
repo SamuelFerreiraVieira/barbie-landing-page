@@ -38,3 +38,10 @@ Bash
 ├── js/
 │   └── script.js     # Configuração do carrossel e menu
 └── index.html        # A estrutura principal do site
+
+
+
+Como ultiliza-lo:
+Clone o reporsitorio no VsCode e abra o index
+ou
+baixe o arquivo completo e apenas abra o index
