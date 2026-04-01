@@ -27,7 +27,7 @@ Adicionei as Meta Tags de descrição e viewport. Isso garante que, se alguém p
 Organizei o HTML com comentários claros dividindo cada seção. O CSS está separado por blocos lógicos, facilitando se eu (ou outro dev) precisar mexer depois.
 
 4. Ajuste nas Imagens do Elenco
-Garanti via CSS que as fotos dos atores fiquem sempre perfeitamente circulares (sem aquele efeito oval esquisito) e com as mesmas dimensões, independentemente do tamanho original da imagem.
+Garanti via CSS que as fotos dos atores fiquem sempre perfeitamente circulares e com as mesmas dimensões, independentemente do tamanho original da imagem.
 
 📁 Estrutura do Projeto
 Bash
