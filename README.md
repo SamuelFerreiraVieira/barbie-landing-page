@@ -1,47 +1,31 @@
-PlayCube - Desafio Front-End (Barbie 2023)
+# 🎬 Teste Prático - Aprendiz Front-end (O POVO)
 
-Esse aqui é o PlayCube, um projeto que desenvolvi para um teste técnico de Front-End. O objetivo era criar uma página de detalhes de um filme da Barbie que fosse bonita, organizada e, o mais importante: totalmente responsiva.
+Fala, pessoal! Me chamo **Samuel Ferreira** e este é o projeto que desenvolvi para o teste técnico da vaga de Aprendiz Front-end no Grupo O POVO. 
 
-🛠️ O que eu usei? (Tech Stack)
-Para manter o projeto leve e eficiente, foquei no trio clássico com um toque de bibliotecas externas para o carrossel:
+Finalizei o desafio com foco total em entregar um código **limpo, organizado e escalável**. Apliquei essa organização no Front para facilitar a manutenção e futuras integrações.
 
-HTML5: Estrutura semântica (usei tags como section, article, main e footer para o Google ler bem o site).
+---
 
-CSS3: Estilização do zero, com Flexbox e Grid para organizar tudo.
+## 🚀 O que eu foquei:
 
-JavaScript (jQuery): Usei para dar vida ao menu mobile e configurar o carrossel.
+Para esse desafio, não me limitei a apenas "fazer o site". Estruturei o projeto pensando em boas práticas de mercado:
 
-Owl Carousel 2: Biblioteca que usei para fazer aquele slider do elenco que desliza suave.
+* **CSS Moderno com Variáveis (`:root`):** Organizei todas as cores e padrões no topo. Se o time de design do O POVO quiser mudar a identidade visual, eu altero em um só lugar e o site todo se adapta.
+* **HTML5 Semântico:** Usei tags como `<header>`, `<main>`, `<section>` e `<article>`. Isso é fundamental para o **SEO** do portal e garante a **Acessibilidade** para todos os usuários.
+* **Responsividade Real:** O layout foi testado para rodar liso no Desktop, Tablet e Celular. Usei `@media queries` para reorganizar as resenhas e o menu conforme o tamanho da tela.
+* **Interatividade (Owl Carousel):** Implementei o slider do elenco usando **jQuery** e **Owl Carousel 2**, trazendo dinamismo para a página sem comprometer a performance.
+* **Menu Mobile:** Criei uma lógica de `toggle` para a navegação no celular, focando em uma experiência de usuário (UX) fluida.
 
-Google Fonts: Fonte Inter para dar um ar moderno e profissional.
+---
 
-🚀 O que eu fiz:
+## 🛠️ Tecnologias Utilizadas
 
-1. Responsividade 
-O site não quebra. Ajustei os Breakpoints para que, no tablet (1024px) e no celular, os elementos se reorganizem. No tablet, centralizei o título e o poster para o visual não ficar "espalhado" demais.
+* **HTML5** (Estrutura semântica)
+* **CSS3** (Layout com Flexbox, Grid e Variáveis)
+* **JavaScript / jQuery** (Lógica de interação e controle do Menu)
+* **Owl Carousel 2** (Slider dinâmico de elenco)
+* **Google Fonts (Inter)** (Tipografia moderna)
 
-2. Meta tags
-Adicionei as Meta Tags de descrição e viewport. Isso garante que, se alguém pesquisar no Google, o PlayCube apareça com as informações certas e o layout não fique "esmagado" no celular.
+--
 
-3. Código Limpo 
-Organizei o HTML com codigos claros dividindo cada seção. O CSS está separado por blocos lógicos, facilitando se eu (ou outro dev) precisar mexer depois.
-
-4. Ajuste nas Imagens do Elenco
-Garanti via CSS que as fotos dos atores fiquem sempre perfeitamente circulares e com as mesmas dimensões, independentemente do tamanho original da imagem.
-
-📁 Estrutura do Projeto
-Bash
-├── assets/
-│   ├── img/          # Imagens do poster, logo e elenco
-├── css/
-│   └── style.css     # Toda a mágica do design e media queries
-├── js/
-│   └── script.js     # Configuração do carrossel e menu
-└── index.html        # A estrutura principal do site
-
-
-
-Como ultiliza-lo:
-Clone o reporsitorio no VsCode e abra o index
-ou
-baixe o arquivo completo e apenas abra o index
+**Desenvolvido por Samuel Ferreira** 
